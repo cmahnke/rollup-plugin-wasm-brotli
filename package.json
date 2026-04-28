@@ -25,7 +25,8 @@
     "clean": "rimraf dist/*",
     "lint": "tsc && eslint . -c eslint.config.mjs --report-unused-disable-directives --max-warnings 0",
     "knip": "knip",
-    "jsdoc": "jsdoc -c jsdoc.config.json -r ."
+    "jsdoc": "jsdoc -c jsdoc.config.json -r .",
+    "format": "prettier . --check"
   },
   "dependencies": {
     "brotli-unicode": "latest",
