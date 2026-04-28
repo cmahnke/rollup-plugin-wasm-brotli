@@ -32,7 +32,7 @@ const configs = [
   {
     input: "src/compress.ts",
     output: {
-      file: "dist/compress.mjs",
+      file: "dist/compress.js",
       format: "es"
     },
     plugins: [

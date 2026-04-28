@@ -4,7 +4,7 @@
   "description": "Locate and bundle WASM dependencies inline using brotli-unicode",
   "type": "module",
   "bin": {
-    "compress": "./dist/compress.mjs"
+    "compress": "./dist/compress.js"
   },
   "license": "MIT",
   "peerDependencies": {
