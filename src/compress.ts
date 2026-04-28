@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { compress } from "brotli-unicode";
 
