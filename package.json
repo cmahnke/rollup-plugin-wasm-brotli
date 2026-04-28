@@ -1,6 +1,6 @@
 {
   "name": "@projektemacher/rollup-plugin-wasm-brotli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Locate and bundle WASM dependencies inline using brotli-unicode",
   "type": "module",
   "bin": {
