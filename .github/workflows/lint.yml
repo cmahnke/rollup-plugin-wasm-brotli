@@ -26,7 +26,7 @@ jobs:
           node-version-file: ".nvmrc"
           registry-url: "https://npm.pkg.github.com"
       - run: |
-          npm ci
+          npm i
           npm run lint
           npm run format
           npx tsc -b --verbose
