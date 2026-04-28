@@ -1,0 +1,6 @@
+{
+  "$schema": "https://unpkg.com/knip@5/schema.json",
+  "entry": ["src/compress.ts", "src/rollup-plugin-inline-wasm.ts", "test/rollup-plugin-inline-wasm.test.ts", "rollup.config.mjs"],
+  "project": ["**/*.{js,cjs,mjs,jsx,ts,cts,mts,tsx}!"],
+  "ignore": ["dist/**"]
+}
