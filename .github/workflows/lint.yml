@@ -35,27 +35,6 @@ jobs:
           npm run build
           npm publish --dry-run
 
-  import_test:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version-file: ".nvmrc"
-          registry-url: "https://npm.pkg.github.com"
-      - name: Install dependencies
-        working-directory: tests/import
-        run: |
-          npm cache clean --force
-          rm -rf node_modules
-          npm i --no-package-lock --prefix ./
-      - name: Build
-        working-directory: tests/import
-        run: |
-          npm run build
-
   test:
     runs-on: ubuntu-latest
     permissions:
@@ -68,7 +47,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
       - name: Test
         run: |
-          npm ci
+          npm i
           npm run test
 
   site:

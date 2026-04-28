@@ -469,7 +469,7 @@ describe("inlineWasm Plugin", () => {
         const message = (e as Error).message;
         if (message.includes("Import") || message.includes("import")) return;
 
-        throw new Error(`Unexpected WebAssembly error (possible magic word mismatch): ${message}`);
+        throw new Error(`Unexpected WebAssembly error (possible magic word mismatch): ${message}`, { cause: e });
       }
     }, 30_000);
 
@@ -496,7 +496,7 @@ describe("inlineWasm Plugin", () => {
       } catch (e) {
         const message = (e as Error).message;
         if (message.includes("Import") || message.includes("import")) return;
-        throw new Error(`loadWasm() simulation failed: ${message}`);
+        throw new Error(`loadWasm() simulation failed: ${message}`, { cause: e });
       }
     }, 30_000);
   });
