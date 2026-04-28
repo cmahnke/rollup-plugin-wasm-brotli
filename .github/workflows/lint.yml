@@ -64,12 +64,12 @@ jobs:
           npm i
       - name: build site
         run: |
-          npm run site
+          npm run jsdoc
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v4.0.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          publish_dir: ./public
           force_orphan: true
 
   bun:
