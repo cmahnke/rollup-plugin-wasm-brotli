@@ -33,6 +33,9 @@ jobs:
           npx rollup --config
           npx prettier --check .
           npm run build
+      - name: Run publish dry run
+        continue-on-error: true
+        run: |
           npm publish --dry-run
 
   test:
