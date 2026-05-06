@@ -61,7 +61,8 @@
     "dist",
     "src",
     "types",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "keywords": [
     "rollup",
