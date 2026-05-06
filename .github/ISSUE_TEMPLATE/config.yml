@@ -13,11 +13,11 @@ issue_templates:
 
 contact_links:
   - name: Documentation
-    url: https://github.com/your-username/rollup-plugin-inline-wasm#readme
+    url: https://github.com/cmahnke/rollup-plugin-inline-wasm#readme
     about: Please read the documentation before opening an issue.
 
   - name: Discussions
-    url: https://github.com/your-username/rollup-plugin-inline-wasm/discussions
+    url: https://github.com/cmahnke/rollup-plugin-inline-wasm/discussions
     about: Have a general question or idea? Start a discussion instead.
 
   - name: Rollup Issues
