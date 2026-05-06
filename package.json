@@ -20,13 +20,13 @@
   },
   "scripts": {
     "start": "./dist/compress.mjs",
-    "build": "rimraf dist/* && rollup -c",
-    "test": "vitest",
-    "clean": "rimraf dist/*",
-    "lint": "tsc && eslint . -c eslint.config.mjs --report-unused-disable-directives --max-warnings 0",
-    "knip": "knip",
-    "jsdoc": "jsdoc -c jsdoc.config.json -r .",
-    "format": "prettier . --check"
+    "build": "npx rimraf dist/* && npx rollup -c",
+    "test": "npx vitest",
+    "clean": "npx rimraf dist/*",
+    "lint": "npx tsc && npx eslint . -c eslint.config.mjs --report-unused-disable-directives --max-warnings 0",
+    "knip": "npx knip",
+    "jsdoc": "npx jsdoc -c jsdoc.config.json -r .",
+    "format": "npx prettier . --check"
   },
   "dependencies": {
     "brotli-unicode": "latest",

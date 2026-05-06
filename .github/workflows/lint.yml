@@ -90,12 +90,12 @@ jobs:
       - name: Run linters
         run: |
           bun run lint
-          bun run tsc
+      - name: Run build
+        run: |
           bun run build
 
   deno:
     runs-on: ubuntu-24.04
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v6
         with:
@@ -109,5 +109,6 @@ jobs:
       - name: Run linters
         run: |
           deno run lint
-          deno run tsc
+      - name: Run build
+        run: |
           deno run build
