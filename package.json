@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "rollup": "^4.62.3"
+    "rollup": "^4.62.4"
   },
   "peerDependenciesMeta": {
     "rollup": {
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "brotli-unicode": "latest",
-    "rollup": "^4.62.3"
+    "rollup": "^4.62.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
