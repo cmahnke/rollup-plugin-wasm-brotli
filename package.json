@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "rollup": "^4.64.5"
+    "rollup": "^4.64.6"
   },
   "peerDependenciesMeta": {
     "rollup": {
@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "brotli-unicode": "latest",
-    "rollup": "^4.64.5"
+    "rollup": "^4.64.6"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -49,7 +49,7 @@
     "tslib": "^2.8.1",
     "tsx": "^4.23.15",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.1",
+    "typescript-eslint": "^8.71.2",
     "vitest": "^5.0.4"
   },
   "module": "./dist/es/index.js",
